@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <header>
+        <h3>Weather</h3>
+        <p class="date"><span id="weekday">Wednesday</span> <span id="day">29</span> <span id="month">July</span></p>
+        <p class="time">00:44</p>
+    </header>
+
+    <main>
+        <h2 class="city">New York</h2>
+        <p class="coordinates">40.7°N · 74.0°W · EST</p>
+
+        <section class="weather">
+            <h3 class="temperature"><span id="temp">26°</span></h3>
+            <p class="description">Sunny</p>
+            <p class="feels-like">Feels like <span id="feels-like">29°</span></p>
+            <img id="weather-icon" src="" alt="Current weather icon">
+
+            <div class="weather-stats">
+                <div class="weather-stat">
+                    <p class="label">High</p>
+                    <p class="value" id="high">28°</p>
+                </div>
+
+
+                <div class="weather-stat">
+                    <p class="label">Low</p>
+                    <p class="value" id="low">19°</p>
+                </div>
+
+
+                <div class="weather-stat">
+                    <p class="label">Humidity</p>
+                    <p class="value" id="humidity">58%</p>
+                </div>
+
+
+                <div class="weather-stat">
+                    <p class="label">Wind</p>
+                    <p class="value" id="wind">22 km/h S</p>
+                </div>
+
+
+                <div class="weather-stat">
+                    <p class="label">Precip.</p>
+                    <p class="value" id="precip">5%</p>
+                </div>
+            </div>
+
+            <div class="sun-times">
+                <div class="weather-stat">
+                    <p class="label">Sunrise</p>
+                    <p class="value" id="sunrise">05:48</p>
+                </div>
+
+                <div class="weather-stat">
+                    <p class="label">Sunset</p>
+                    <p class="value" id="sunset">20:11</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="weather-info">
+            <section class="info-card">
+                <p class="label">Pressure</p>
+                <p class="value" id="pressure">1019 hPa</p>
+            </section>
+
+            <section class="info-card">
+                <p class="label">Visibility</p>
+                <p class="value" id="visibility">16 km</p>
+            </section>
+
+            <section class="info-card">
+                <p class="label">UV Index</p>
+                <p class="value" id="uv-index">6</p>
+            </section>
+        </section>
+
+        <section class="forecast">
+            <div class="forecast-tabs">
+                <button type="button" class="active">Hourly</button>
+                <button type="button">7-Day</button>
+            </div>
+
+            <div class="forecast-list" id="hourlyForecast">
+
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
