@@ -29,8 +29,8 @@ main {
     margin: 0 auto;
     padding-top: 28px;
     padding-bottom: 28px;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 header {
@@ -93,7 +93,10 @@ header {
 .forecast {
     background: white;
     border-radius: 20px;
-    padding: 32px;
+    padding: 0;
+    margin:0;
+    padding-left: 8px;
+    padding-right: 8px;
     box-shadow: 0 2px 16px rgba(0,0,0,.06);
 }
 
@@ -108,14 +111,13 @@ header {
 
 .temperature{
     color:#F59E0B;
-    font-size: 84px;
-    font-weight: 760;
+    font-size: 88px;
+    font-weight: 700;
     letter-spacing: -2px;
 }
 
 .forecast-tabs{
     display:flex;
-    gap:16px;
     width: auto;
 }
 
@@ -186,4 +188,30 @@ header {
     color: #3B82F6;
 }
 
+button {
+    font-family: var(--font-sans);
+    border: none;
+    text-decoration: none;
+    background: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
 
+.forecast-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.forecast-card {
+    padding-right: 20px;
+    border-right: 1px solid #E8EBEE;
+}
