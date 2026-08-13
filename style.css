@@ -188,6 +188,43 @@ header {
     color: #3B82F6;
 }
 
+.header-left {
+    margin-left: 4px;
+}
+
+.search {
+    padding-left: 8px;
+    border-radius: 16px;
+    border: 1px solid #E8EBEE;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cityInput {
+    background: none;
+    border: none;
+    width: auto;
+    display: flex;
+    flex-grow: 1;
+    border-radius: 16px;
+}
+
+#cityInput:focus {
+    outline: none;
+    border-color: #e5e7eb;
+}
+
+#searchBtn {
+    transition: transform 0.2s ease-in-out;
+}
+
+
+#searchBtn:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
 button {
     font-family: var(--font-sans);
     border: none;
