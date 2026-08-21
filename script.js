@@ -51,6 +51,26 @@ async function getWeather() {
             });
         document.querySelector("#sunrise").textContent = sunriseTime;
         document.querySelector("#sunset").textContent = sunsetTime;
+
+        const date = new Date((data.dt + data.timezone) * 1000);
+
+        document.querySelector("#weekday").textContent =
+            date.toLocaleDateString("en-US", {
+                weekday: "long",
+                timeZone: "UTC"
+            });
+
+        document.querySelector("#day").textContent =
+            date.toLocaleDateString("en-US", {
+                day: "numeric",
+                timeZone: "UTC"
+            });
+
+        document.querySelector("#month").textContent =
+            date.toLocaleDateString("en-US", {
+                month: "long",
+                timeZone: "UTC"
+            });
         const currentTime = new Date()
             .toLocaleTimeString([], {
                 hour: '2-digit',
